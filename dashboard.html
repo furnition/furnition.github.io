@@ -3,10 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <title>dashboard</title>
+    <style>
+        .jumbotron {
+            position: relative;
+            padding: 40px 0;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+            background: #020031;
+            background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#020031),color-stop(100%,#6d3353));
+            background: -webkit-linear-gradient(45deg,#020031 0,#6d3353 100%);
+            background: -o-linear-gradient(45deg,#020031 0,#6d3353 100%);
+            background: linear-gradient(45deg,#020031 0,#6d3353 100%);
+            -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+            box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+        }
+        @media screen and (min-width: 768px){
+            .jumbotron {
+                padding-top: 48px;
+                padding-bottom: 48px;
+            }
+            .jumbotron {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+                color: inherit;
+                background-color: #eee;
+            }
+        }
+        .masthead {
+            padding: 60px 0 80px;
+            margin-bottom: 0;
+            color: #fff;
+        }
+        .jumbotron {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: inherit;
+            background-color: #eee;
+        }
+        .jumbotron .h1, .jumbotron h1 {
+            color: white;
+        }
+        @media screen and (min-width: 768px){
+            .masthead h1 {
+                font-size: 90px;
+            }
+
+            .masthead h1 {
+                font-size: 60px;
+                line-height: 1;
+                letter-spacing: -2px;
+                font-weight: 700;
+            }}
+            @media screen and (min-width: 768px){
+                .jumbotron .h1, .jumbotron h1 {
+                    font-size: 63px;
+                }}
+        @media screen and (min-width: 768px){
+
+            .masthead h2 {
+                font-size: 18px;
+                font-weight: 200;
+                line-height: 1.25;
+                color: white;
+            }}
+        .masthead .masthead-button-links {
+            margin-top: 10px;
+        }
+        .masthead p {
+            font-size: 40px;
+            font-weight: 200;
+            line-height: 1.25;
+        }
+        .jumbotron p {
+            margin-bottom: 15px;
+            font-size: 21px;
+            font-weight: 200;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+        .btn-lg.btn-shadow {
+            padding: 13px 35px 17px;
+        }
+        .btn-primary.btn-shadow {
+            -webkit-box-shadow: inset 0 -4px 0 #2a6496;
+            box-shadow: inset 0 -4px 0 #2a6496;
+            border: 0;
+            color: #fff;
+        }
+
+        .btn-group-lg>.btn, .btn-lg {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .masthead-links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .masthead-links li {
+            display: inline;
+            padding: 0 10px;
+            color: rgba(255,255,255,.25);
+        }
+        .jumbotron a {
+            color: #fff;
+            text-decoration: none;
+            color: rgba(255,255,255,.5);
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+        .link-btn{
+           margin: 0 20px;
+        }
+    </style>
 </head>
 <body>
-<a href="icon/iconfont.css" download="iconfont.css">下载图表库</a>
-<a href="index.html">index</a>
-<a href="icon/demo_fontclass.html">图表示例</a>
+<div class="jumbotron masthead">
+    <div class="container">
+        <h1>Paas UI规范</h1>
+        <h2>仅供内部使用,实时更新,所见即所得的UI规范</h2>
+        <ul class="masthead-links">
+            <li>
+                <a href="index.html" class="link-btn" >UI规范</a>
+                <a href="icon/demo_fontclass.html" class="link-btn">图表示例</a>
+            </li>
+        </ul>
+        <p class="masthead-button-links">
+            <a class="btn btn-lg btn-primary btn-shadow" href="icon/iconfont.css" download="iconfont.css"  target="_blank" role="button">下载paas图标库</a>
+        </p>
+    </div>
+</div>
+
 </body>
 </html>
